@@ -1,0 +1,2 @@
+class Bluetoothsearch < ApplicationRecord
+end
