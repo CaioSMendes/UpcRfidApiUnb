@@ -3,8 +3,8 @@ class BluetoothsearchesController < ApplicationController
 
   # GET /bluetoothsearches
   def index
-    @bluetoothsearches = Bluetoothsearch.paginate(page: params[:page], per_page: 10)
-
+    #@bluetoothsearches = Bluetoothsearch.paginate(page: params[:page], per_page: 10)
+    @bluetoothsearches = Bluetoothsearch.all
     render json: @bluetoothsearches
   end
 
